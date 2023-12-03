@@ -1,10 +1,15 @@
 CREATE DATABASE awsHealthcare;
 USE awsHealthcare;
 
+drop table Members;
+drop table exerciseinfo;
+drop table medicationssupplements;
 
 -- 회원 정보 테이블
 CREATE TABLE Members (
-    MemberID INT PRIMARY KEY,
+    MemberCode INT PRIMARY KEY,
+    Id VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
     Name VARCHAR(255) NOT NULL,
     Age INT,
     Gender VARCHAR(10),
@@ -20,20 +25,20 @@ CREATE TABLE Members (
 -- 운동 정보 테이블
 CREATE TABLE ExerciseInfo (
     ExerciseID INT PRIMARY KEY,
-    MemberID INT,
+    MemberCode INT,
     ExerciseType VARCHAR(50),
     WeeklyFrequency INT, -- 주간 빈도
     CaloriesPerSession FLOAT, -- 회당 평균 소비 칼로리
     WeeklyGoalFrequency INT, -- 주간 목표 빈도
-    FOREIGN KEY (MemberID) REFERENCES Members(MemberID) ON DELETE CASCADE -- 회원 정보와의 외래키 관계 설정
+    FOREIGN KEY (MemberCode) REFERENCES Members(MemberCode) ON DELETE CASCADE -- 회원 정보와의 외래키 관계 설정
 );
 
 -- 의약품 및 보충제 정보 테이블
 CREATE TABLE MedicationsSupplements (
     MedicationID INT PRIMARY KEY,
-    MemberID INT,
+    MemberCode INT,
     MedicationType VARCHAR(100), -- 의약품 및 보충제 유형
-    FOREIGN KEY (MemberID) REFERENCES Members(MemberID) ON DELETE CASCADE -- 회원 정보와의 외래키 관계 설정
+    FOREIGN KEY (MemberCode) REFERENCES Members(MemberCode) ON DELETE CASCADE -- 회원 정보와의 외래키 관계 설정
 );
 
 SHOW TABLES;
