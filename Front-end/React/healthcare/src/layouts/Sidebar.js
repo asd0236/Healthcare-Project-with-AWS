@@ -4,47 +4,47 @@ import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   {
-    title: "Dashboard",
+    title: "대시보드",
     href: "/starter",
     icon: "bi bi-speedometer2",
   },
   {
-    title: "Alert",
+    title: "알림",
     href: "/alerts",
     icon: "bi bi-bell",
   },
   {
-    title: "Badges",
+    title: "배지",
     href: "/badges",
     icon: "bi bi-patch-check",
   },
   {
-    title: "Buttons",
+    title: "버튼",
     href: "/buttons",
     icon: "bi bi-hdd-stack",
   },
   {
-    title: "Cards",
+    title: "카드",
     href: "/cards",
     icon: "bi bi-card-text",
   },
   {
-    title: "Grid",
+    title: "그리드",
     href: "/grid",
     icon: "bi bi-columns",
   },
   {
-    title: "Table",
+    title: "팀 테이블",
     href: "/table",
     icon: "bi bi-layout-split",
   },
   {
-    title: "Forms",
+    title: "폼 작성",
     href: "/forms",
     icon: "bi bi-textarea-resize",
   },
   {
-    title: "Breadcrumbs",
+    title: "브레드크럼",
     href: "/breadcrumbs",
     icon: "bi bi-link",
   },
@@ -66,12 +66,12 @@ const Sidebar = () => {
       <div className="d-flex align-items-center">
         <Logo />
         <span className="ms-auto d-lg-none">
-        <Button
-          close
-          size="sm"
-          className="ms-auto d-lg-none"
-          onClick={() => showMobilemenu()}
-        ></Button>
+          <Button
+            close
+            size="sm"
+            className="ms-auto d-lg-none"
+            onClick={() => showMobilemenu()}
+          ></Button>
         </span>
       </div>
       <div className="pt-4 mt-2">
@@ -91,15 +91,6 @@ const Sidebar = () => {
               </Link>
             </NavItem>
           ))}
-          <Button
-            color="danger"
-            tag="a"
-            target="_blank"
-            className="mt-3"
-            href="https://www.wrappixel.com/templates/ample-react-dashboard/?ref=33"
-          >
-            Upgrade To Pro
-          </Button>
         </Nav>
       </div>
     </div>
