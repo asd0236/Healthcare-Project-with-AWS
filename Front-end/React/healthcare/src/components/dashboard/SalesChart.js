@@ -5,12 +5,12 @@ const SalesChart = () => {
   const chartoptions = {
     series: [
       {
-        name: "Iphone 13",
-        data: [0, 31, 40, 28, 51, 42, 109, 100],
+        name: "수영",
+        data: [0, 31, 40, 28, 51, 42, 150, 200],
       },
       {
-        name: "Oneplue 9",
-        data: [0, 11, 32, 45, 32, 34, 52, 41],
+        name: "달리기",
+        data: [0, 11, 32, 45, 95, 90, 200, 300],
       },
     ],
     options: {
@@ -45,9 +45,9 @@ const SalesChart = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">Sales Summary</CardTitle>
+        <CardTitle tag="h5">소모 칼로리 현황</CardTitle>
         <CardSubtitle className="text-muted" tag="h6">
-          Yearly Sales Report
+          연간 소모 칼로리 보고
         </CardSubtitle>
         <Chart
           type="area"
@@ -60,5 +60,6 @@ const SalesChart = () => {
     </Card>
   );
 };
+
 
 export default SalesChart;

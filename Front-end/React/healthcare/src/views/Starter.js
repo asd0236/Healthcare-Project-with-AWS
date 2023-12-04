@@ -52,36 +52,36 @@ const Starter = () => {
         <Col sm="6" lg="3">
           <TopCards
             bg="bg-light-success text-success"
-            title="Profit"
-            subtitle="Yearly Earning"
-            earning="$21k"
+            title="달리기 소비 칼로리"
+            subtitle="달리기"
+            earning="300kcal"
             icon="bi bi-wallet"
           />
         </Col>
         <Col sm="6" lg="3">
           <TopCards
             bg="bg-light-danger text-danger"
-            title="Refunds"
-            subtitle="Refund given"
-            earning="$1k"
+            title="필라테스 소비 칼로리"
+            subtitle="필라테스"
+            earning="200kcal"
             icon="bi bi-coin"
           />
         </Col>
         <Col sm="6" lg="3">
           <TopCards
             bg="bg-light-warning text-warning"
-            title="New Project"
-            subtitle="Yearly Project"
-            earning="456"
+            title="근력 운동 소비 칼로리"
+            subtitle="근력 운동"
+            earning="200kcal"
             icon="bi bi-basket3"
           />
         </Col>
         <Col sm="6" lg="3">
           <TopCards
             bg="bg-light-info text-into"
-            title="Sales"
-            subtitle="Weekly Sales"
-            earning="210"
+            title="수영 소비 칼로리"
+            subtitle="수영"
+            earning="200kcal"
             icon="bi bi-bag"
           />
         </Col>

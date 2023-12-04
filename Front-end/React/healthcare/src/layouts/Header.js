@@ -90,13 +90,13 @@ const Header = () => {
             ></img>
           </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem header>Info</DropdownItem>
-            <DropdownItem>My Account</DropdownItem>
-            <DropdownItem>Edit Profile</DropdownItem>
+            <DropdownItem header>정보</DropdownItem>
+            <DropdownItem>마이페이지</DropdownItem>
+            <DropdownItem>정보 변경</DropdownItem>
             <DropdownItem divider />
             <DropdownItem>My Balance</DropdownItem>
             <DropdownItem>Inbox</DropdownItem>
-            <DropdownItem>Logout</DropdownItem>
+            <DropdownItem>로그아웃</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </Collapse>
