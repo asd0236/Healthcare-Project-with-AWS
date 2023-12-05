@@ -8,6 +8,7 @@ import bg1 from "../assets/images/bg/bg1.jpg";
 import bg2 from "../assets/images/bg/bg2.jpg";
 import bg3 from "../assets/images/bg/bg3.jpg";
 import bg4 from "../assets/images/bg/bg4.jpg";
+import StarterOfTop from "../views/StarterOfTop";
 
 const BlogData = [
   {
@@ -47,6 +48,11 @@ const BlogData = [
 const Starter = () => {
   return (
     <div>
+      <Row>
+        <Col xxl="12">
+          <StarterOfTop />
+        </Col>
+      </Row>
       {/***Top Cards***/}
       <Row>
         <Col sm="6" lg="3">

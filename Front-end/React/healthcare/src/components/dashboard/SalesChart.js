@@ -45,9 +45,9 @@ const SalesChart = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">소모 칼로리 현황</CardTitle>
+        <CardTitle tag="h5">일일 소모 칼로리 현황</CardTitle>
         <CardSubtitle className="text-muted" tag="h6">
-          연간 소모 칼로리 보고
+          연간 일일 소모 칼로리 보고
         </CardSubtitle>
         <Chart
           type="area"
