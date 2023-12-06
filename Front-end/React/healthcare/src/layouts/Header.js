@@ -60,23 +60,23 @@ const Header = () => {
         <Nav className="me-auto" navbar>
           <NavItem>
             <Link to="/starter" className="nav-link">
-              Starter
+              Home
             </Link>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <Link to="/about" className="nav-link">
               About
             </Link>
-          </NavItem>
+          </NavItem> */}
           <UncontrolledDropdown inNavbar nav>
             <DropdownToggle caret nav>
-              DD Menu
+              미정
             </DropdownToggle>
             <DropdownMenu end>
-              <DropdownItem>Option 1</DropdownItem>
-              <DropdownItem>Option 2</DropdownItem>
+              <DropdownItem>미정 1</DropdownItem>
+              <DropdownItem>미정 2</DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Reset</DropdownItem>
+              <DropdownItem>미정 3</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>

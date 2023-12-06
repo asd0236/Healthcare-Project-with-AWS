@@ -4,52 +4,52 @@ import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   {
-    title: "대시보드",
+    title: "대시보드(starter)",
     href: "/starter",
     icon: "bi bi-speedometer2",
   },
   {
-    title: "알림",
+    title: "알림(alerts)",
     href: "/alerts",
     icon: "bi bi-bell",
   },
   {
-    title: "배지",
+    title: "내정보(Badges)",
     href: "/badges",
     icon: "bi bi-patch-check",
   },
   {
-    title: "버튼",
+    title: "식단 관리(Button)",
     href: "/buttons",
     icon: "bi bi-hdd-stack",
   },
   {
-    title: "카드",
-    href: "/cards",
-    icon: "bi bi-card-text",
-  },
-  {
-    title: "그리드",
+    title: "영양제(Grid)",
     href: "/grid",
     icon: "bi bi-columns",
   },
   {
-    title: "팀 테이블",
+    title: "운동관리(Cards)",
+    href: "/cards",
+    icon: "bi bi-card-text",
+  },
+  {
+    title: "커뮤니티(Tables)",
     href: "/table",
     icon: "bi bi-layout-split",
   },
   {
-    title: "폼 작성",
+    title: "forms(삭제예정)",
     href: "/forms",
     icon: "bi bi-textarea-resize",
   },
   {
-    title: "브레드크럼",
+    title: "breadcrumb(삭제예정)",
     href: "/breadcrumbs",
     icon: "bi bi-link",
   },
   {
-    title: "About",
+    title: "About(삭제예정)",
     href: "/about",
     icon: "bi bi-people",
   },
