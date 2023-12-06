@@ -1,5 +1,4 @@
-CREATE DATABASE awsHealthcare;
-USE awsHealthcare;
+USE healthcare_web_backend_database;
 
 drop table Members;
 drop table HealthData;
@@ -72,17 +71,3 @@ CREATE TABLE IdPassword (
 
 
 SHOW TABLES;
-
--- Members 테이블의 구조 확인
-DESCRIBE Members;
--- ExerciseInfo 테이블의 구조 확인
-DESCRIBE ExerciseInfo;
--- MedicationsSupplements 테이블의 구조 확인
-DESCRIBE MedicationsSupplements;
-
--- Members 테이블의 데이터 조회
-SELECT * FROM Members;
--- ExerciseInfo 테이블의 데이터 조회
-SELECT * FROM ExerciseInfo;
--- MedicationsSupplements 테이블의 데이터 조회
-SELECT * FROM MedicationsSupplements;
