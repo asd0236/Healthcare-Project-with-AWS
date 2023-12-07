@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 import { Container } from "reactstrap";
+import LoginModal from "../components/modals/LoginModal";
 
 const FullLayout = () => {
   return (
@@ -22,6 +23,8 @@ const FullLayout = () => {
           </Container>
         </div>
       </div>
+      {/* <div className="LoginModal"></div> */}
+      <LoginModal />
     </main>
   );
 };
